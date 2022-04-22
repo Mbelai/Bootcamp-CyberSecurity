@@ -131,6 +131,7 @@ Save and submit the completed file for your homework submission.
 3. Command to run expert mode:
 
         sudo chkrootkit -x 
+        kk
 
 4. Provide a report from the chrootkit output on what can be done to harden the system.
     - Screenshot of end of sample output:
