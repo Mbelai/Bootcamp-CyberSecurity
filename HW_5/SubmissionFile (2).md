@@ -90,7 +90,8 @@ Save and submit the completed file for your homework submission.
 
     - Add your config file edits below:
 
-    ```bash
+    
+    bash
                 /var/log/auth.log {
                     weekly
                     rotate 7
@@ -100,7 +101,7 @@ Save and submit the completed file for your homework submission.
                     endscript
                     }
 ![logrotate.png](images\logrotate.png)
-    ```
+
 ---
 
 ### Bonus: Check for Policy and File Violations
@@ -114,7 +115,7 @@ Save and submit the completed file for your homework submission.
 
     - Add the edits made to the configuration file below:
 
-    ```bash
+    bash
     
                 max_log_file = 35
                 num_logs = 7
