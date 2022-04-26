@@ -130,9 +130,10 @@ Save and submit the completed file for your homework submission.
     - Add the edits made to the `rules` file below:
 
     bash
-            -w /etc/shadow -p wra -k  hashpass_audit
-            -w /etc/passwd -p wra -k userpass_audit
-            -w /var/log/auth.log -p wra -k authlog_audit
+    
+             -w /etc/shadow -p wra -k  hashpass_audit
+             -w /etc/passwd -p wra -k userpass_audit
+             -w /var/log/auth.log -p wra -k authlog_audit
 ![rule.png](images\rules.png)
 
 
