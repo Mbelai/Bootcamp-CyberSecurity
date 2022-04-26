@@ -5,7 +5,6 @@ Please edit this file by adding the solution commands on the line below the prom
 Save and submit the completed file for your homework submission.
 
 ---
-
 ### Step 1: Create, Extract, Compress, and Manage tar Backup Archives
 
 1. Command to **extract** the `TarDocs.tar` archive to the current directory:
@@ -57,7 +56,7 @@ Save and submit the completed file for your homework submission.
 
 2. Paste your `system.sh` script edits below:
 
-    ```bash
+    bash
     #!/bin/bash
 
     free -h > ~/backups/freemem/free_mem.txt
@@ -65,7 +64,6 @@ Save and submit the completed file for your homework submission.
      lsof > ~/backups/openlist/open_list.txt
       df -h > ~/backups/freedisk/free_disk.txt
 ![system.png](images\system.png)
-    ```
 
 3. Command to make the `system.sh` script executable:
 
