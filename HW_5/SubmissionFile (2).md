@@ -36,13 +36,15 @@ Save and submit the completed file for your homework submission.
 
 - Why wouldn't you use the options `-x` and `-c` at the same time with `tar`?
 
+        You wouldn't be able to extracted the contents of the tar file if it hadn't been created with -c in a different previous command line as it wouldn't be able to create and extract on the same command line.
 ---
 
 ### Step 2: Create, Manage, and Automate Cron Jobs
 
 1. Cron job for backing up the `/var/log/auth.log` file:
 
-      0 6 * * 3 sudo tar -zcf /Projects/auth_backup.tgz /var/log/auth.log
+         crontab -e
+         0 6 * * 3 sudo tar -zcf /Projects/auth_backup.tgz /var/log/auth.log
 ![cronjob.png](images\cronjob.png)         
 ---
 
@@ -58,10 +60,10 @@ Save and submit the completed file for your homework submission.
     ```bash
     #!/bin/bash
 
-    [free -h > ~/backups/freemem/free_mem.txt
+    free -h > ~/backups/freemem/free_mem.txt
      du -h > ~/backups/diskuse/disk_usage.txt
      lsof > ~/backups/openlist/open_list.txt
-      df -h > ~/backups/freedisk/free_disk.txt]
+      df -h > ~/backups/freedisk/free_disk.txt
 ![system.png](images\system.png)
     ```
 
@@ -91,14 +93,14 @@ Save and submit the completed file for your homework submission.
     - Add your config file edits below:
 
     ```bash
-                [/var/log/auth.log {
+                /var/log/auth.log {
                     weekly
                     rotate 7
                     notifempty
                     delaycompress
                     missingok
                     endscript
-                    }]
+                    }
 ![logrotate.png](images\logrotate.png)
     ```
 ---
@@ -115,13 +117,11 @@ Save and submit the completed file for your homework submission.
     - Add the edits made to the configuration file below:
 
     ```bash
-    [
-
+    
                 max_log_file = 35
                 num_logs = 7
 ![log.png](images\logs.png)
 
-    ]
 
     ```
 
@@ -130,15 +130,12 @@ Save and submit the completed file for your homework submission.
 
     - Add the edits made to the `rules` file below:
 
-    ```bash
-    [
+    bash
             -w /etc/shadow -p wra -k  hashpass_audit
             -w /etc/passwd -p wra -k userpass_audit
             -w /var/log/auth.log -p wra -k authlog_audit
 ![rule.png](images\rules.png)
 
-    ]
-    ```
 
 4. Command to restart `auditd`:
 
