@@ -123,8 +123,6 @@ Save and submit the completed file for your homework submission.
 ![log.png](images\logs.png)
 
 
-    ```
-
 3. Command using `auditd` to set rules for `/etc/shadow`, `/etc/passwd` and `/var/log/auth.log`:
 
 
