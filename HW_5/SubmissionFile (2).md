@@ -57,12 +57,12 @@ Save and submit the completed file for your homework submission.
 2. Paste your `system.sh` script edits below:
 
     bash
-    #!/bin/bash
-
-    free -h > ~/backups/freemem/free_mem.txt
-     du -h > ~/backups/diskuse/disk_usage.txt
-     lsof > ~/backups/openlist/open_list.txt
-      df -h > ~/backups/freedisk/free_disk.txt
+    
+            #!/bin/bash
+            free -h > ~/backups/freemem/free_mem.txt
+            du -h > ~/backups/diskuse/disk_usage.txt
+            lsof > ~/backups/openlist/open_list.txt
+            df -h > ~/backups/freedisk/free_disk.txt
 ![system.png](images\system.png)
 
 3. Command to make the `system.sh` script executable:
@@ -92,7 +92,8 @@ Save and submit the completed file for your homework submission.
 
     
     bash
-                /var/log/auth.log {
+    
+            /var/log/auth.log {
                     weekly
                     rotate 7
                     notifempty
