@@ -149,7 +149,6 @@ Save and submit the completed file for your homework submission.
         sudo auditctl -l
 ![list.png](images\list.png)
 
-
 6. Command to produce an audit report:
 
         sudo aureport -au
@@ -169,7 +168,7 @@ Save and submit the completed file for your homework submission.
 
 1. Command to return `journalctl` messages with priorities from emergency to error:
 
-        
+
 
 1. Command to check the disk usage of the system journal unit since the most recent boot:
 
