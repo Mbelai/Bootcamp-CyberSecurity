@@ -79,6 +79,7 @@ Save and submit the completed file for your homework submission.
 
 2. Escalate your privileges to the `root` user. Use John to crack the entire `/etc/shadow` file: 
 
+        sudo su
         unshadow passwd.txt shadow.txt > unshadowed.txt
         john --wordlist=/usr/share/john/password.lst unshadowed.txt
 
