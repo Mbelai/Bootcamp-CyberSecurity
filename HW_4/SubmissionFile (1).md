@@ -114,9 +114,9 @@ Save and submit the completed file for your homework submission.
 
     - Screenshot of report output:
 
-    ![Virtual_OverWatch_lynis_part1.png](image\VirtualBox_OverWatch_lynis_part1.png)
-    ![Virtual_OverWatch_lynis_part2.png](image\VirtualBox_OverWatch_lynis_part2.png)
-    ![Virtual_OverWatch_lynis_part3.png](image\VirtualBox_OverWatch_lynis_part3.png)
+    ![Virtual_OverWatch_lynis_part1.png](image/VirtualBox_OverWatch_lynis_part1.png)
+    ![Virtual_OverWatch_lynis_part2.png](image/VirtualBox_OverWatch_lynis_part2.png)
+    ![Virtual_OverWatch_lynis_part3.png](image/VirtualBox_OverWatch_lynis_part3.png)
 
 
 ### Bonus
@@ -136,8 +136,8 @@ Save and submit the completed file for your homework submission.
 4. Provide a report from the chrootkit output on what can be done to harden the system.
     - Screenshot of end of sample output:
 
-    ![Virtual_OverWatch_chkrootkit_part1.png](image\VirtualBox_OverWatch_chkrootkit_part1.png)
-    ![Virtual_OverWatch_chkrootkit_part2.png](image\VirtualBox_OverWatch_chkrootkit_part2.png)
-    ![Virtual_OverWatch_chkrootkit_part3.png](image\VirtualBox_OverWatch_chkrootkit_part3.png)
+    ![Virtual_OverWatch_chkrootkit_part1.png](image/VirtualBox_OverWatch_chkrootkit_part1.png)
+    ![Virtual_OverWatch_chkrootkit_part2.png](image/VirtualBox_OverWatch_chkrootkit_part2.png)
+    ![Virtual_OverWatch_chkrootkit_part3.png](image/VirtualBox_OverWatch_chkrootkit_part3.png)
 ---
 © 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
