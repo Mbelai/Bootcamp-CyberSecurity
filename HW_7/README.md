@@ -30,4 +30,6 @@ Deliverable for Task 4: Submit a copy of your enum_acls.ps1 script.
 Deliverable for Bonus Task 5: Submit a screenshot of the contents of one of your transcribed PowerShell logs or a copy of one of the logs.
 
 ![Log.png](./image/Log.png)
-![PowerShell_transcript.DESKTOP-SITPOTH.hHTr8tfo.20220509205437.txt](image\PowerShell_transcript.DESKTOP-SITPOTH.hHTr8tfo.20220509205437.txt)
+
+                log is in image under PowerShell_transcript.DESKTOP-SITPOTH.hHTr8tfo.20220509205437.txt
+                
