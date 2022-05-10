@@ -1,4 +1,4 @@
-## Week 5 Homework Submission File: Archiving and Logging Data
+## Musie Belai Week 5 Homework Submission File: Archiving and Logging Data
 
 Please edit this file by adding the solution commands on the line below the prompt.
 
@@ -10,25 +10,25 @@ Save and submit the completed file for your homework submission.
 1. Command to **extract** the `TarDocs.tar` archive to the current directory:
 
         tar -xf TarDocs.tar
-    ![extract.png](images\extract.png)
+    ![extract.png](images/extract.png)
 
 2. Command to **create** the `Javaless_Doc.tar` archive from the `TarDocs/` directory, while excluding the `TarDocs/Documents/Java` directory:
 
         tar cvf Javaless_Docs.tar ./Design-Patterns/ ./Google-Maps-Hacks/ ./Music-Sheets/ IntelliJIDEA_ReferenceCard.pdf c++interviewquestions.pdf
-    ![createtar.png](images\createtar.png)
+    ![createtar.png](images/createtar.png)
 
 3. Command to ensure `Java/` is not in the new `Javaless_Docs.tar` archive:
 
 
         tar tvf Javaless_Docs.tar | grep Java
-    ![tvf.png](images\tvf.png)
+    ![tvf.png](images/tvf.png)
 
 
 **Bonus** 
 - Command to create an incremental archive called `logs_backup.tar.gz` with only changed files to `snapshot.file` for the `/var/log` directory:
 
         sudo tar --listed-incremental=snapshot.file -cvzf logs_backup.tar.gz /var/log
-    ![backup.png](images\backup.png)
+    ![backup.png](images/backup.png)
 
 
 #### Critical Analysis Question
@@ -44,7 +44,7 @@ Save and submit the completed file for your homework submission.
 
          crontab -e
          0 6 * * 3 sudo tar -zcf /Projects/auth_backup.tgz /var/log/auth.log
-![cronjob.png](images\cronjob.png)         
+![cronjob.png](images/cronjob.png)         
 ---
 
 ### Step 3: Write Basic Bash Scripts
@@ -52,7 +52,7 @@ Save and submit the completed file for your homework submission.
 1. Brace expansion command to create the four subdirectories:
 
         sudo mkdir -p ~/backups/{freemem,diskuse,openlist,freedisk}
-![brace.png](images\brace.png)
+![brace.png](images/brace.png)
 
 2. Paste your `system.sh` script edits below:
 
@@ -63,18 +63,18 @@ Save and submit the completed file for your homework submission.
             du -h > ~/backups/diskuse/disk_usage.txt
             lsof > ~/backups/openlist/open_list.txt
             df -h > ~/backups/freedisk/free_disk.txt
-![system.png](images\system.png)
+![system.png](images/system.png)
 
 3. Command to make the `system.sh` script executable:
 
         chmod +x system.sh
-![chmod&test.png](images\chmod&test.png)
+![chmod&test.png](images/chmod&test.png)
 
 **Optional**
 - Commands to test the script and confirm its execution:
 
         sudo ./system.sh
-![chmod&test.png](images\chmod&test.png)
+![chmod&test.png](images/chmod&test.png)
 
 **Bonus**
 - Command to copy `system` to system-wide cron directory:
@@ -101,7 +101,7 @@ Save and submit the completed file for your homework submission.
                     missingok
                     endscript
                     }
-![logrotate.png](images\logrotate.png)
+![logrotate.png](images/logrotate.png)
 
 ---
 
@@ -110,7 +110,7 @@ Save and submit the completed file for your homework submission.
 1. Command to verify `auditd` is active:
 
         systemctl status auditd
-![auditd.png](images\auditd.png)
+![auditd.png](images/auditd.png)
 
 2. Command to set number of retained logs and maximum log file size:
 
@@ -120,7 +120,7 @@ Save and submit the completed file for your homework submission.
     
                 max_log_file = 35
                 num_logs = 7
-![log.png](images\logs.png)
+![log.png](images/logs.png)
 
 
 3. Command using `auditd` to set rules for `/etc/shadow`, `/etc/passwd` and `/var/log/auth.log`:
@@ -133,7 +133,7 @@ Save and submit the completed file for your homework submission.
              -w /etc/shadow -p wra -k  hashpass_audit
              -w /etc/passwd -p wra -k userpass_audit
              -w /var/log/auth.log -p wra -k authlog_audit
-![rule.png](images\rules.png)
+![rule.png](images/rules.png)
 
 
 4. Command to restart `auditd`:
@@ -143,7 +143,7 @@ Save and submit the completed file for your homework submission.
 5. Command to list all `auditd` rules:
 
         sudo auditctl -l
-![list.png](images\list.png)
+![list.png](images/list.png)
 
 6. Command to produce an audit report:
 
@@ -152,7 +152,7 @@ Save and submit the completed file for your homework submission.
 7. Create a user with `sudo useradd attacker` and produce an audit report that lists account modifications:
 
         sudo useradd criminal
-![criminal.png](images\criminal.png)
+![criminal.png](images/criminal.png)
 
 8. Command to use `auditd` to watch `/var/log/cron`:
 
